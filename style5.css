@@ -1,0 +1,73 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#outer-box {
+  height: 800px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#filter-box {
+  height: 50px; /* Increased height for better visibility */
+  width: 100%;
+  border: 2px solid blueviolet;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8; /* Light background for better contrast */
+}
+
+#by-category,
+#by-prize {
+  color: #333; /* Changed color for better readability */
+  font-weight: bold; /* Increased font weight */
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+#product-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  overflow-y: auto; /* Added scroll for overflow */
+  padding: 30px 30px; /* Added padding for better spacing */
+}
+
+.product {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* White background for product card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product img {
+  max-width: 100%; /* Ensure image fits within the product card */
+  max-height: 80%; /* Ensure image fits within the product card */
+
+  margin-top: 20px;
+  object-fit: cover; /* Cover the entire space */
+}
