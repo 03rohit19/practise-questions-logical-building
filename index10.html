@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="script19.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="container__timer">Countdown time</span>
+      <div class="container_labels">
+        <p class="container__labels_label">Hours</p>
+        <p class="container__labels_label">Minutes</p>
+        <p class="container__labels_label">Seconds</p>
+      </div>
+      <div class="container_inputs">
+        <input
+          type="number"
+          class="container_input_time_hour"
+          placeholder="00"
+          oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2)"
+        />
+        <p class="container_input_colon"></p>
+        <input
+          type="number"
+          class="container_input_time_hour"
+          placeholder="00"
+          oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2)"
+        />
+        <p class="container_input_colon"></p>
+        <input
+          type="number"
+          class="container_input_time_hour"
+          placeholder="00"
+          oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2)"
+        />
+      </div>
+      <div class="container_btns">
+        <button class="btn_start">Start</button>
+        <button class="btn_stop">Stop</button>
+        <button class="btn_reset">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="outer-box">
+      <div id="filter-box">
+        <label id="by-category">
+          Filter By Category:
+          <select id="category-filter">
+            <option value="allCategory">All Category</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
+          </select>
+        </label>
+        <label id="by-prize">
+          Filter By Price:
+          <select id="price-filter">
+            <option value="all">All</option>
+            <option value="less-than-100">Rs 0-100</option>
+            <option value="less-than-200">Rs 100-200</option>
+            <option value="less-than-300">Rs 200-300</option>
+            <option value="less-than-400">Rs 300-400</option>
+            <option value="less-than-500">Rs 400-500</option>
+            <option value="more-than-500">More than Rs 500</option>
+          </select>
+        </label>
+      </div>
+      <div id="product-container"></div>
+    </div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>

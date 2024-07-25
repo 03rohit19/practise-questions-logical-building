@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 2px;
+  font-size: 50px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  border: 2px solid black;
+  height: auto;
+  width: 80vw;
+}
+
+.card-details {
+  padding: 10px;
+}
