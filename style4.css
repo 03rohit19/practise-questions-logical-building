@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* styles.css */
 
 body {
@@ -78,3 +79,85 @@ body.dark-mode .user-card {
 body.dark-mode .user-card:hover {
   background-color: rgba(128, 128, 128, 0.5); /* Faded grey */
 }
+=======
+/* styles.css */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main-div {
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heading-div {
+  text-align: center;
+  width: 100%;
+  border: 2px solid black;
+}
+
+#heading {
+  margin: 0;
+  padding: 10px;
+}
+
+#cards-div {
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  border: 2px solid brown;
+  padding: 10px;
+}
+
+.user-card {
+  height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+  background-color: yellow;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+.user-card h3,
+.user-card p {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* Hover effect */
+.user-card:hover {
+  background-color: rgba(255, 255, 0, 0.5); /* Faded yellow */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode #cards-div {
+  background-color: black;
+}
+
+body.dark-mode .user-card {
+  background-color: grey;
+  color: white;
+}
+
+body.dark-mode .user-card:hover {
+  background-color: rgba(128, 128, 128, 0.5); /* Faded grey */
+}
+>>>>>>> origin/main
